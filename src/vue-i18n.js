@@ -1,5 +1,5 @@
 var $ = require('jquery');
-window.console.log($);
+
 /**
  * The default options.
  *
