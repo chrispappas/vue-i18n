@@ -31,8 +31,9 @@ var DEFAULT_OPTIONS = {
  *    the configuration options.
  * @author Haixing Hu
  */
-exports.install = function (Vue, options) {
-  var jquery = window.JQuery || window.$;
+
+export default function install (Vue, options = {}) {
+  var jquery = $ || jQuery || window.JQuery || window.$;
   if (! jquery) {
     throw new Error("JQuery is required.");
   }
