@@ -32,7 +32,7 @@ var DEFAULT_OPTIONS = {
  * @author Haixing Hu
  */
 
-function install (Vue, options = {}) {
+function install (Vue) {
   var jquery = $ || jQuery || window.JQuery || window.$;
   if (! jquery) {
     throw new Error("JQuery is required.");
