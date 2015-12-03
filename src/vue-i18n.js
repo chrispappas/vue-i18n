@@ -32,7 +32,7 @@ var DEFAULT_OPTIONS = {
  * @author Haixing Hu
  */
 
-export default function install (Vue, options = {}) {
+function install (Vue, options = {}) {
   var jquery = $ || jQuery || window.JQuery || window.$;
   if (! jquery) {
     throw new Error("JQuery is required.");
@@ -121,3 +121,5 @@ function update(vm) {
     update(child);
   }
 }
+
+module.exports = install;
