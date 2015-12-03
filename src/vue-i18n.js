@@ -1,3 +1,5 @@
+var $ = require('jquery');
+window.console.log($);
 /**
  * The default options.
  *
@@ -32,7 +34,7 @@ var DEFAULT_OPTIONS = {
  * @author Haixing Hu
  */
 
-function install (Vue) {
+function install (Vue, options) {
   var jquery = $ || jQuery || window.JQuery || window.$;
   if (! jquery) {
     throw new Error("JQuery is required.");

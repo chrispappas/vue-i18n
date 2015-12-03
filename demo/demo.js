@@ -1,4 +1,4 @@
-var Vue = require("../lib/vue/dist/vue.js");
+var Vue = require("vue");
 var i18n = require("../src/vue-i18n.js");
 Vue.use(i18n);
 
